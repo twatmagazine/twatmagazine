@@ -18,6 +18,8 @@ class DefaultController extends Controller
     	$myObject->setValue($value);
     	
     	$entityManager = $this->get('doctrine')->getEntityManager();
+    	$entityManager->persist($myObject);
+    	$entityManager->flush();
 
     	return $this->render('TwatMagBundle:Default:index.html.twig', array('name' => $myObject->getValue()));
     }
