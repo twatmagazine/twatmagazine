@@ -12,3 +12,7 @@ twat_mag_add_numbers:
     requirements:
         numberOne: \d+
         numberTwo: \d+
+
+twat_mag_homepage:
+    pattern:  /test/{value}
+    defaults: { _controller: TwatMagBundle:Default:test }
