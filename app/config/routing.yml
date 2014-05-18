@@ -1,0 +1,4 @@
+twat_mag:
+    resource: "@TwatMagBundle/Resources/config/routing.yml"
+    prefix:   /
+
