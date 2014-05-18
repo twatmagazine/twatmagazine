@@ -1,7 +1,0 @@
-parameters:
-#    twat_mag.example.class: Twat\MagBundle\Example
-
-services:
-#    twat_mag.example:
-#        class: %twat_mag.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
