@@ -1,18 +1,5 @@
-twat_mag_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: TwatMagBundle:Default:index }
-
-twat_mag_blog:
-    pattern: /blog/{word}
-    defaults: { _controller: TwatMagBundle:Blog:index }
-
-twat_mag_add_numbers:
-    pattern: /add/{numberOne}/{numberTwo}
-    defaults: { _controller: TwatMagBundle:Blog:add }
+TwatMagBundle_homepage:
+    pattern:  /
+    defaults: { _controller: TwatMagBundle:Page:index }
     requirements:
-        numberOne: \d+
-        numberTwo: \d+
-
-twat_mag_homepage:
-    pattern:  /test/{value}
-    defaults: { _controller: TwatMagBundle:Default:test }
+        _method:  GET
