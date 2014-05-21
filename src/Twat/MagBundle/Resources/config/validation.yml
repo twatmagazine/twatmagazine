@@ -1,16 +1,16 @@
 Twat\MagBundle\Entity\Enquiry:
-	properties:
-		name:
-			- NotBlank: ~
-		email:
-			- Email: ~
-		subject:
-			- Length:
-				min: 0
-				max: 50
-				minMessage: "Bite Me!"
-				maxMessage: "Thank you, your bank account has now been emptied"
-		body:
-			- Length:
-				min: 50
-				minMessage: "Please enter a valid email address, thank you"
+    properties:
+        name:
+            - NotBlank: ~
+        email:
+            - Email: ~
+        subject:
+            - Length:
+                min: 0
+                max: 50
+                minMessage: "Bite Me!"
+                maxMessage: "Thank you, your bank account has now been emptied"
+                body:
+            - Length:
+                min: 50
+                minMessage: "Please enter a valid email address, thank you"
