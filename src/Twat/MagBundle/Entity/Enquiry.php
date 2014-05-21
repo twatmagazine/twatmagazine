@@ -65,7 +65,7 @@ class Enquiry
         $metadata->addPropertyConstraint('email', new Email());
 
         $metadata->addPropertyConstraint('subject', new NotBlank());
-        $metadata->addPropertyConstraint('subject', new MaxLength(50));
+        //$metadata->addPropertyConstraint('subject', new MaxLength(50));
 
         $metadata->addPropertyConstraint('body', new MinLength(50));
     }
