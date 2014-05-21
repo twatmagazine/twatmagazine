@@ -10,7 +10,7 @@ Twat\MagBundle\Entity\Enquiry:
                 max: 50
                 minMessage: "Bite Me!"
                 maxMessage: "Thank you, your bank account has now been emptied"
-                body:
+        body:
             - Length:
                 min: 50
                 minMessage: "Please enter a valid email address, thank you"
