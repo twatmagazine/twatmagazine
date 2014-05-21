@@ -8,4 +8,10 @@ TwatMagBundle_about:
     pattern:  /about
     defaults: { _controller: TwatMagBundle:Page:about }
     requirements:
+        _method:  GET
+
+TwatMagBundle_contact:
+    pattern:  /contact
+    defaults: { _controller: TwatMagBundle:Page:contact }
+    requirements:
         _method:  GET        
