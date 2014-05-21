@@ -3,3 +3,9 @@ TwatMagBundle_homepage:
     defaults: { _controller: TwatMagBundle:Page:index }
     requirements:
         _method:  GET
+
+TwatMagBundle_about:
+    pattern:  /about
+    defaults: { _controller: TwatMagBundle:Page:about }
+    requirements:
+        _method:  GET        
