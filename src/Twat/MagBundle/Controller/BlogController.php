@@ -16,13 +16,13 @@ class BlogController extends Controller
     {
         $em = $this->getDoctrine()->getEntityManager();
 
-        $blog = $em->getRepository('BloggerBlogBundle:Blog')->find($id);
+        $blog = $em->getRepository('TwatMagBundle:Blog')->find($id);
 
         if (!$blog) {
             throw $this->createNotFoundException('Unable to find Blog post.');
         }
 
-        return $this->render('BloggerBlogBundle:Blog:show.html.twig', array(
+        return $this->render('TwatMagBundle:Blog:show.html.twig', array(
             'blog'      => $blog,
         ));
     }
