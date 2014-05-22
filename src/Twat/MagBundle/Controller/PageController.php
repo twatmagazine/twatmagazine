@@ -36,4 +36,20 @@ class PageController extends Controller
 	        'form' => $form->createView()
 	    ));
 	}
+
+	public function sidebarAction()
+	{
+	    $em = $this->getDoctrine()
+	               ->getEntityManager();
+
+	    $tags = $em->getRepository('TwatMagBundle:Blog')
+	               ->getTags();
+
+	    $tagWeights = $em->getRepository('TwatMagBundle:Blog')
+	                     ->getTagWeights($tags);
+
+	    return $this->render('TwatMagBundle:Page:sidebar.html.twig', array(
+	        'tags' => $tagWeights
+	    ));
+	}
 }
