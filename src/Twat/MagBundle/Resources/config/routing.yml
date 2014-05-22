@@ -14,10 +14,4 @@ TwatMagBundle_contact:
     pattern:  /contact
     defaults: { _controller: TwatMagBundle:Page:contact }
     requirements:
-        _method:  GET|POST
-
-TwatMagBundle_sidebar:
-    pattern:  /
-    defaults: { _controller: TwatMagBundle:Page:sidebar }
-    requirements:
-        _method:  GET       
+        _method:  GET|POST        
