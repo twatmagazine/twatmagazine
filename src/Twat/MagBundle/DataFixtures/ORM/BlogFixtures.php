@@ -1,11 +1,11 @@
 <?php
 // src/Blogger/BlogBundle/DataFixtures/ORM/BlogFixtures.php
 
-namespace Blogger\BlogBundle\DataFixtures\ORM;
+namespace Twat\MagBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use Blogger\BlogBundle\Entity\Blog;
+use Twat\MagBundle\Entity\Blog;
 
 class BlogFixtures implements FixtureInterface
 {
