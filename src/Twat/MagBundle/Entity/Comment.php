@@ -49,10 +49,10 @@ class Comment
      */
     protected $updated;
 
-    public function __construct()
+    public function __construct($created, $updated)
     {
-        $this->setCreated(new \DateTime()) = $created;
-        $this->setUpdated(new \DateTime()) = $updated;
+        $this->setCreated(new \DateTime());
+        $this->setUpdated(new \DateTime());
 
         $this->setApproved(true);
     }
