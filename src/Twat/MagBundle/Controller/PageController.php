@@ -13,14 +13,10 @@ class PageController extends Controller
         $em = $this->getDoctrine()
                    ->getEntityManager();
 
-        $blogs = $em->createQueryBuilder()
-                    ->select('b')
-                    ->from('TwatMagBundle:Blog',  'b')
-                    ->addOrderBy('b.created', 'DESC')
-                    ->getQuery()
-                    ->getResult();
+        $blogs = $em->getRepository('BloggerBlogBundle:Blog')
+                    ->getLatestBlogs();
 
-        return $this->render('TwatMagBundle:Page:index.html.twig', array(
+        return $this->render('BloggerBlogBundle:Page:index.html.twig', array(
             'blogs' => $blogs
         ));
     }
