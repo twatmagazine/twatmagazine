@@ -5,7 +5,7 @@ namespace Twat\MagBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Twat\MagBundle\Entity\Repository\BlogRepository")
  * @ORM\Table(name="blog")
  * @ORM\HasLifecycleCallbacks
  */
