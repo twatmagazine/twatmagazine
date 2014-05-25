@@ -1,5 +1,4 @@
 <?php
-// src/Blogger/BlogBundle/DataFixtures/ORM/BlogFixtures.php
 
 namespace Twat\MagBundle\DataFixtures\ORM;
 
