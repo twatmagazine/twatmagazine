@@ -9,4 +9,7 @@
             <p>There are no tags</p>
         {% endfor %}
     </p>
+    <a href="{{ path('TwatMagBundle_blog_show', { 'id': comment.blog.id, 'slug': comment.blog.slug }) }}#comment-{{ comment.id }}">
+    {{ comment.blog.title }}
+    </a>
 </section>
