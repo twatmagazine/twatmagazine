@@ -233,17 +233,19 @@ class Blog
         return $this->updated;
     }
 
-    public function __construct()
-    {
-        $this->setCreated(new \DateTime());
-        $this->setUpdated(new \DateTime());
-    }
-
     /**
      * @ORM\PreUpdate
      */
     public function setUpdatedValue()
     {
        $this->setUpdated(new \DateTime());
+    }
+
+     public function __construct()
+    {
+        $this->comments = new ArrayCollection();
+
+        $this->setCreated(new \DateTime());
+        $this->setUpdated(new \DateTime());
     }
 }
