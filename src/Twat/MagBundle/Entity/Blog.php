@@ -246,13 +246,4 @@ class Blog
     {
        $this->setUpdated(new \DateTime());
     }
-
-    public function __construct()
-    {
-        $this->comments = new ArrayCollection();
-
-        $this->setCreated(new \DateTime());
-        $this->setUpdated(new \DateTime());
-    }
-
 }
