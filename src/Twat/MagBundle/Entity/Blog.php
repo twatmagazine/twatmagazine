@@ -3,6 +3,7 @@
 namespace Twat\MagBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * @ORM\Entity(repositoryClass="Twat\MagBundle\Entity\Repository\BlogRepository")
@@ -43,8 +44,6 @@ class Blog
      */
     protected $tags;
 
-    protected $comments;
-
     /**
      * @ORM\Column(type="datetime")
      */
@@ -54,6 +53,11 @@ class Blog
      * @ORM\Column(type="datetime")
      */
     protected $updated;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Comment", mappedBy="blog")
+     */
+    protected $comments;
 
     /**
      * Get id
@@ -242,4 +246,13 @@ class Blog
     {
        $this->setUpdated(new \DateTime());
     }
+
+    public function __construct()
+    {
+        $this->comments = new ArrayCollection();
+
+        $this->setCreated(new \DateTime());
+        $this->setUpdated(new \DateTime());
+    }
+
 }
