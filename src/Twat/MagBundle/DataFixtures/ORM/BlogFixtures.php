@@ -7,7 +7,7 @@ use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Twat\MagBundle\Entity\Blog;
 
-class BlogFixtures extends AbstractFixture implements FixtureInterface
+class BlogFixtures extends AbstractFixture implements OrderedFixtureInterface
 {
     public function load(ObjectManager $manager)
     {
