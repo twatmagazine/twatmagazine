@@ -21,7 +21,7 @@ class Comment
     /**
      * @ORM\Column(type="string")
      */
-    protected $User;
+    protected $user;
 
     /**
      * @ORM\Column(type="text")
@@ -49,7 +49,7 @@ class Comment
      */
     protected $updated;
 
-    public function construct()
+    public function __construct()
     {
         $this->setCreated(new \DateTime());
         $this->setUpdated(new \DateTime());
@@ -63,5 +63,18 @@ class Comment
     public function setUpdatedValue()
     {
        $this->setUpdated(new \DateTime());
+    }
+
+    /**
+     * Set user
+     *
+     * @param string $user
+     * @return Blog
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+
+        return $this;
     }
 }
