@@ -60,17 +60,25 @@ class Comment
     /**
      * @ORM\PreUpdate
      */
-    public function setUpdated($dateTime = new \DateTime())
+    public function setUpdated($dateTime = null)
     {
-       $this->updated = $dateTime;
+        if ($dateTime === null) {
+            $dateTime =  new \DateTime();
+        }
+
+        $this->updated = $dateTime;
     }
 
     /**
      * @ORM\PreUpdate
      */
-    public function setCreated($dateTime = new \DateTime())
+    public function setCreated($dateTime = null)
     {
-       $this->created = $dateTime;
+        if ($dateTime === null) {
+            $dateTime =  new \DateTime();
+        }
+
+        $this->created = $dateTime;
     }
 
     /**
