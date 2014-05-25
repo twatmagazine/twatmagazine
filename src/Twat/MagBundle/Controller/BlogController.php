@@ -26,7 +26,7 @@ class BlogController extends Controller
             'blog'      => $blog,
 
         if (!$blog) {
-        throw $this->createNotFoundException('Unable to find Blog post.');
+            throw $this->createNotFoundException('Unable to find Blog post.');
         }
 
         $comments = $em->getRepository('BloggerBlogBundle:Comment')
