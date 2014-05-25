@@ -19,13 +19,6 @@ class BlogController extends Controller
         $blog = $em->getRepository('TwatMagBundle:Blog')->find($id);
 
         if (!$blog) {
-            throw $this->createNotFoundException('Kiss my boy cheeks.');
-        }
-
-        return $this->render('TwatMagBundle:Blog:show.html.twig', array(
-            'blog'      => $blog,
-
-        if (!$blog) {
             throw $this->createNotFoundException('Unable to find Blog post.');
         }
 
