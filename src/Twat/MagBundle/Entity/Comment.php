@@ -21,7 +21,7 @@ class Comment
     /**
      * @ORM\Column(type="string")
      */
-    protected $user;
+    protected $User;
 
     /**
      * @ORM\Column(type="text")
