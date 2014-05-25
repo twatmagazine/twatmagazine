@@ -13,10 +13,10 @@ class PageController extends Controller
         $em = $this->getDoctrine()
                    ->getEntityManager();
 
-        $blogs = $em->getRepository('BloggerBlogBundle:Blog')
+        $blogs = $em->getRepository('TwatMagBundle:Blog')
                     ->getLatestBlogs();
 
-        return $this->render('BloggerBlogBundle:Page:index.html.twig', array(
+        return $this->render('TwatMagBundle:Page:index.html.twig', array(
             'blogs' => $blogs
         ));
     }
