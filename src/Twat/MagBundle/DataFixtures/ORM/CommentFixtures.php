@@ -34,63 +34,54 @@ class CommentFixtures extends AbstractFixture implements OrderedFixtureInterface
         $comment->setUser('Kate');
         $comment->setComment('Are you challenging me? ');
         $comment->setBlog($manager->merge($this->getReference('blog-2')));
-        $comment->setCreated(new \DateTime("2011-07-23 06:15:20"));
         $manager->persist($comment);
 
         $comment = new Comment();
         $comment->setUser('Dade');
         $comment->setComment('Name your stakes.');
         $comment->setBlog($manager->merge($this->getReference('blog-2')));
-        $comment->setCreated(new \DateTime("2011-07-23 06:18:35"));
         $manager->persist($comment);
 
         $comment = new Comment();
         $comment->setUser('Kate');
         $comment->setComment('If I win, you become my slave.');
         $comment->setBlog($manager->merge($this->getReference('blog-2')));
-        $comment->setCreated(new \DateTime("2011-07-23 06:22:53"));
         $manager->persist($comment);
 
         $comment = new Comment();
         $comment->setUser('Dade');
         $comment->setComment('Your SLAVE?');
         $comment->setBlog($manager->merge($this->getReference('blog-2')));
-        $comment->setCreated(new \DateTime("2011-07-23 06:25:15"));
         $manager->persist($comment);
 
         $comment = new Comment();
         $comment->setUser('Kate');
         $comment->setComment('You wish! You\'ll do shitwork, scan, crack copyrights...');
         $comment->setBlog($manager->merge($this->getReference('blog-2')));
-        $comment->setCreated(new \DateTime("2011-07-23 06:46:08"));
         $manager->persist($comment);
 
         $comment = new Comment();
         $comment->setUser('Dade');
         $comment->setComment('And if I win?');
         $comment->setBlog($manager->merge($this->getReference('blog-2')));
-        $comment->setCreated(new \DateTime("2011-07-23 10:22:46"));
         $manager->persist($comment);
 
         $comment = new Comment();
         $comment->setUser('Kate');
         $comment->setComment('Make it my first-born!');
         $comment->setBlog($manager->merge($this->getReference('blog-2')));
-        $comment->setCreated(new \DateTime("2011-07-23 11:08:08"));
         $manager->persist($comment);
 
         $comment = new Comment();
         $comment->setUser('Dade');
         $comment->setComment('Make it our first-date!');
         $comment->setBlog($manager->merge($this->getReference('blog-2')));
-        $comment->setCreated(new \DateTime("2011-07-24 18:56:01"));
         $manager->persist($comment);
 
         $comment = new Comment();
         $comment->setUser('Kate');
         $comment->setComment('I don\'t DO dates. But I don\'t lose either, so you\'re on!');
         $comment->setBlog($manager->merge($this->getReference('blog-2')));
-        $comment->setCreated(new \DateTime("2011-07-25 22:28:42"));
         $manager->persist($comment);
 
         $comment = new Comment();
