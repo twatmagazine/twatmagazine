@@ -49,7 +49,7 @@ class Comment
      */
     protected $updated;
 
-    public function __construct($created, $updated)
+    public function __construct()
     {
         $this->setCreated(new \DateTime());
         $this->setUpdated(new \DateTime());
@@ -63,6 +63,14 @@ class Comment
     public function setUpdatedValue()
     {
        $this->setUpdated(new \DateTime());
+    }
+
+    /**
+     * @ORM\PreUpdate
+     */
+    public function setCreatedValue()
+    {
+       $this->setCreated(new \DateTime());
     }
 
     /**
