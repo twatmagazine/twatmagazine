@@ -3,6 +3,7 @@
 namespace Twat\MagBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * @ORM\Entity(repositoryClass="Twat\MagBundle\Entity\Repository\CommentRepository")
