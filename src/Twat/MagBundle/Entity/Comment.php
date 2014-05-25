@@ -51,8 +51,8 @@ class Comment
 
     public function __construct()
     {
-        $this->setCreated(new \DateTime());
-        $this->setUpdated(new \DateTime());
+        $this->setCreated(new \DateTime()) = $created;
+        $this->setUpdated(new \DateTime()) = $updated;
 
         $this->setApproved(true);
     }
