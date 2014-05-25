@@ -111,4 +111,17 @@ class Comment
 
         return $this;
     }
+
+    /**
+     * Set approved
+     *
+     * @param string $approved
+     * @return approved
+     */
+    public function setApproved($approved)
+    {
+        $this->approved = $approved;
+
+        return $this;
+    }
 }
