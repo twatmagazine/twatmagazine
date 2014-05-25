@@ -58,7 +58,7 @@ class Comment
     }
 
     /**
-     * @Doctrine\ORM\Mapping\preUpdate
+     * @ORM\preUpdate
      */
     public function setUpdatedValue()
     {
