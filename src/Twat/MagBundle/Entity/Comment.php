@@ -49,13 +49,13 @@ class Comment
      */
     protected $updated;
 
-//    public function __construct()
-//    {
-//        $this->setCreated(new \DateTime());
-//        $this->setUpdated(new \DateTime());
-//
-//       $this->setApproved(true);
-//    }
+   public function __construct()
+   {
+        $this->setCreated(new \DateTime());
+        $this->setUpdated(new \DateTime());
+
+       $this->setApproved(true);
+    }
 
     /**
      * @ORM\PreUpdate
