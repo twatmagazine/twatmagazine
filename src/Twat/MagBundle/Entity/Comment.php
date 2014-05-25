@@ -49,28 +49,28 @@ class Comment
      */
     protected $updated;
 
-   public function construct()
+   public function __construct()
    {
-        $this->setCreated(new \DateTime());
-        $this->setUpdated(new \DateTime());
+        $this->setCreated();
+        $this->setUpdated();
 
-       $this->setApproved(true);
+        $this->setApproved(true);
     }
 
     /**
      * @ORM\PreUpdate
      */
-    public function setUpdatedValue()
+    public function setUpdated($dateTime = new \DateTime())
     {
-       $this->setUpdated(new \DateTime());
+       $this->updated = $dateTime;
     }
 
     /**
      * @ORM\PreUpdate
      */
-    public function setCreatedValue($created)
+    public function setCreated($dateTime = new \DateTime())
     {
-       $this->setCreated(new \DateTime());
+       $this->created = $dateTime;
     }
 
     /**
