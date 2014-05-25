@@ -68,7 +68,7 @@ class Comment
     /**
      * @ORM\PreUpdate
      */
-    public function setCreatedValue()
+    public function setCreatedValue($created)
     {
        $this->setCreated(new \DateTime());
     }
