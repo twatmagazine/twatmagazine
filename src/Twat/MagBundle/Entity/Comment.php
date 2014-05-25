@@ -77,4 +77,30 @@ class Comment
 
         return $this;
     }
+
+    /**
+     * Set comment
+     *
+     * @param string $comment
+     * @return Blog
+     */
+    public function setComment($comment)
+    {
+        $this->comment = $comment;
+
+        return $this;
+    }
+
+    /**
+     * Set blog
+     *
+     * @param string $blog
+     * @return Blog
+     */
+    public function setBlog($blog)
+    {
+        $this->blog = $blog;
+
+        return $this;
+    }
 }
