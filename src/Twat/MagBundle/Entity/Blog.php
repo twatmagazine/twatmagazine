@@ -294,4 +294,3 @@ class Blog
         $this->slug = $this->slugify($slug);
     }
 }
-//fuck
