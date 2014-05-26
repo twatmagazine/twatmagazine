@@ -95,8 +95,6 @@ class Blog
     public function getTitle()
     {
         return $this->title;
-
-        $this->setSlug($this->title);
     }
 
     /**
@@ -282,6 +280,13 @@ class Blog
         }
 
         return $text;
+    }
+
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        $this->setSlug($this->title);
     }
 
     public function setSlug($slug)
