@@ -12,7 +12,7 @@ class BlogController extends Controller
     /**
      * Show a blog entry
      */
-    public function showAction($id, $slug)
+    public function showAction($id)
     {
         $em = $this->getDoctrine()->getEntityManager();
 

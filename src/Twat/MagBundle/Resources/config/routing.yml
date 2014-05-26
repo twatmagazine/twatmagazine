@@ -17,7 +17,7 @@ TwatMagBundle_contact:
         _method:  GET|POST
 
 TwatMagBundle_blog_show:
-    pattern:  /{id}/{slug}
+    pattern:  /{id}
     defaults: { _controller: TwatMagBundle:Blog:show }
     requirements:
         _method:  GET
